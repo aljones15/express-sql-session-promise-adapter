@@ -1,5 +1,4 @@
 # express-sql-session-promise-adapter
-Beginning an Adapter for msql2 promises to be used with express-session Store
 
 default: promiseAdapter
 let's you use mysql2 promises with express-mysql-session
