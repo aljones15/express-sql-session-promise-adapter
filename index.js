@@ -19,12 +19,6 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 */
 var _query = exports._query = function _query(connection) {
   return function (query, values, cb) {
-    console.log('query');
-    console.log(query);
-    console.log('values');
-    console.log(values);
-    console.log('cb');
-    console.log(cb);
     var funcType = _typeof(function () {});
     var callback = false;
     if (cb && (typeof cb === 'undefined' ? 'undefined' : _typeof(cb)) == funcType) {
