@@ -4,7 +4,7 @@
   "description": "Lets you use MySQL2 promises with expression-SQL-session storage",
   "main": "index.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel-node ./server",
+    "build": "babel adapter.js --out-file index.js",
     "test": "mocha --require babel-register --exit"
   },
   "keywords": [
@@ -24,13 +24,13 @@
     "mysql2": "^1.4.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-register": "^6.26.0",
     "chai": "^4.1.2",
     "chai-http": "^3.0.0",
     "istanbul": "^0.4.5",
     "mocha": "^4.0.1",
-    "supertest": "^3.0.0",
-    "webpack": "^3.8.1"
+    "supertest": "^3.0.0"
   }
 }

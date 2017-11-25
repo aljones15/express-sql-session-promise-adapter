@@ -7,7 +7,7 @@
 * @param {function} cb - the callback
 * @return {function}
 */
-const _query = (connection) => (query, values, cb) => {
+export const _query = (connection) => (query, values, cb) => {
   console.log('query');
   console.log(query);
   console.log('values');
@@ -33,7 +33,7 @@ const _query = (connection) => (query, values, cb) => {
 * @param {Object} db - a promise
 * @return {Object}
 */
-const adapter = (db) => {
+export const adapter = (db) => {
   // if the user already resolved the intitial connection then use it
   if(db.query) {
     return {

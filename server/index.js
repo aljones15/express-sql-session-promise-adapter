@@ -3,7 +3,9 @@ import session from 'express-session';
 import SQLSession from 'express-mysql-session';
 import {db} from './connection';
 import routes from './routes';
-import promiseAdapter from '../adapter';
+import promiseAdapter from '../index.js';
+
+console.log(promiseAdapter);
 
 const port = 8085;
 const SQLStore = SQLSession(session);
