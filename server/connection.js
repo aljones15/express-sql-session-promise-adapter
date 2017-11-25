@@ -9,3 +9,12 @@ export let db = mysqlPromise.createConnection({
   database: 'promise_test',
   connectTimeout: 600
 });
+
+/**
+ * query - simply returns a promise
+ * @param {String} text
+ * @return {function}
+*/
+export const query = (text, values) => {
+  return db.then((connection) => connection.query(text, values));
+}
