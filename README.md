@@ -1,5 +1,5 @@
 # express-sql-session-promise-adapter
-** note this is no longer necessary sql session now supports promises
+**note this is no longer necessary sql session now supports promises
 
 default: promiseAdapter
 let's you use mysql2 promises with express-mysql-session
